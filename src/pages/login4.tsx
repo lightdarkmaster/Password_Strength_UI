@@ -63,25 +63,23 @@ function Login() {
     });
   };
 
-  const changeTheme =()=>{
+  const changeTheme = () => {
     router.push("/login5");
-  }
-
+  };
 
   return (
     <div className="flex w-full min-h-screen bg-linear-to-r from-cyan-500 to-blue-500 items-center poppins-light">
       <div className="flex w-full h-full items-centers justify-center items-center">
-        <Image
-        alt="Image"
-        src="/images/falls.gif"
-        fill
-        />
+        <Image alt="Image" src="/images/falls.gif" fill />
         <div className="bg-blue-600/60 w-[400px] h-[350px] flex flex-col gap-[10px] p-[10px] rounded-[10px] shadow-md z-10 items-center">
           <div className="w-full h-fit text-center">
             <h1 className="poppins-bold text-[20px]">Login</h1>
           </div>
           <div className="w-full h-full gap-[10px] p-[10px]">
-            <form onSubmit={handleLogin} className="w-full h-full flex flex-col gap-[10px] p-[10px]">
+            <form
+              onSubmit={handleLogin}
+              className="w-full h-full flex flex-col gap-[10px] p-[10px]"
+            >
               <div className="gap-[10px] items-center flex">
                 <FaUserCircle className="text-[30px]" />
                 <input
@@ -107,9 +105,15 @@ function Login() {
                   onClick={() => setShowPass(!showPass)}
                 >
                   {showPass ? (
-                    <IoMdEyeOff className="text-gray-400 cursor-pointer" size={20} />
+                    <IoMdEyeOff
+                      className="text-gray-400 cursor-pointer"
+                      size={20}
+                    />
                   ) : (
-                    <IoMdEye className="text-gray-400 cursor-pointer" size={20} />
+                    <IoMdEye
+                      className="text-gray-400 cursor-pointer"
+                      size={20}
+                    />
                   )}
                 </div>
               </div>
@@ -131,7 +135,10 @@ function Login() {
                 </button>
               </div>
               <div className="gap-[10px]">
-                <button className="w-full h-fit p-[10px] gap-[10px] border rounded-[10px] cursor-pointer hover:bg-blue-600/70 poppins-bold text-[16px] outline-0 " onClick={changeTheme}>
+                <button
+                  className="w-full h-fit p-[10px] gap-[10px] border rounded-[10px] cursor-pointer hover:bg-blue-600/70 poppins-bold text-[16px] outline-0 "
+                  onClick={changeTheme}
+                >
                   Change Theme
                 </button>
               </div>
