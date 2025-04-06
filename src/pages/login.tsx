@@ -44,6 +44,7 @@ function Login() {
     if (username === defaultUsername && password === defaultPassword) {
       setLoginStatus("Login successful");
       SuccessModal();
+      router.push("/");
     } else {
       setLoginStatus("Invalid username or password");
     }
