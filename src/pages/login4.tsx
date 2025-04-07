@@ -70,7 +70,7 @@ function Login() {
   return (
     <div className="flex w-full min-h-screen bg-linear-to-r from-cyan-500 to-blue-500 items-center poppins-light">
       <div className="flex w-full h-full items-centers justify-center items-center">
-        <Image alt="Image" src="/images/falls.gif" fill />
+        <Image alt="Image" src="/images/falls.gif" fill unoptimized/>
         <div className="bg-blue-600/60 w-[400px] h-[350px] flex flex-col gap-[10px] p-[10px] rounded-[10px] shadow-md z-10 items-center">
           <div className="w-full h-fit text-center">
             <h1 className="poppins-bold text-[20px]">Login</h1>

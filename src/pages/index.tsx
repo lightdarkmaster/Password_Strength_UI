@@ -6,9 +6,9 @@ export default function Home() {
   const [data, setData] = useState<string>("");
 
 
-  const RandomPick=()=>{
+  const RandomPick= async ()=>{
     const randomNumber = Math.floor(Math.random() * 20);
-    fetch(`https://jsonplaceholder.typicode.com/posts/${randomNumber}`)
+   await fetch(`https://jsonplaceholder.typicode.com/posts/${randomNumber}`)
       .then((response) => response.json())
       .then((data) => {
         setData(JSON.stringify(data));

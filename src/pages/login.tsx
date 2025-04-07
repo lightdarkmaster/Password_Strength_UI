@@ -5,6 +5,7 @@ import { FaUnlock } from "react-icons/fa6";
 import Swal from "sweetalert2";
 import Image from "next/image";
 import { useRouter } from "next/router";
+
 function Login() {
   const [password, setPassword] = useState<string>("");
   const [username, setUsername] = useState<string>("");
@@ -71,7 +72,7 @@ function Login() {
   return (
     <div className="flex w-full min-h-screen bg-linear-to-r from-cyan-500 to-blue-500 items-center poppins-light">
       <div className="flex w-full h-full items-centers justify-center items-center">
-        <Image alt="Image" src="/images/nature.gif" fill />
+        <Image alt="Image" src="/images/nature.gif" fill unoptimized/>
         <div className="bg-green-900/95 w-[400px] h-[350px] flex flex-col gap-[10px] p-[10px] rounded-[10px] shadow-md z-10 items-center">
           <div className="w-full h-fit text-center">
             <h1 className="poppins-bold text-[20px]">Login</h1>
