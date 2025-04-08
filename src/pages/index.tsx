@@ -48,7 +48,7 @@ export default function Home() {
       </button>
       {
         data && (
-          <div className="w-full h-full flex flex-col items-center justify-center">
+          <div className="w-full h-full flex flex-col items-center justify-center border-2">
             <h1 className="text-2xl">Data:</h1>
             <pre className="text-sm">{data}</pre>
             <p>{data}</p>
